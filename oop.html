@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Object Oriented Programming</title>
+  <style> 
+
+  </style>
+</head>
+ <body>
+  <p> hello</p>
+    <script>
+  class Person{
+    constructor(name,age, sex){
+      this.name = name;
+      this.age = age;
+      this.sex = sex;
+    }
+    greet(){
+      console.log(`Hello. I am ${this.name} and am ${this.age} years old. Am ${this.sex}` 
+      );
+      if(this.sex ==='male'){
+        console.log(`${this.name} is very beautiful.`)
+        
+      }
+      else if(this.sex === 'female'){
+        console.log(`${this.name} is wonderfully made`)
+      }
+    }
+  }
+
+  const person = new Person('John', 22, 'male');
+
+  console.log(person);
+  person.greet();
+
+ const body = Object.create(Person);
+   body.hair = 'brown';
+   body.size = 'tall';
+   body.color = 'black';
+  const droid = new Person('David', 41, 'female');
+  console.log(droid)
+  droid.greet();
+  const krim =  new Person('Jayden', 40, 'female');
+
+  console.log(krim);
+  krim.greet();
+  krim.age = 35;
+  console.log(krim);
+  krim.greet();
+
+ console.log(Object.entries(krim));
+    </script>
+ </body>
+</html>

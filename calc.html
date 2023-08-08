@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Calculator</title>
+  <style> 
+
+  </style>
+</head>
+ <body>
+  <input placeholder="0" class="js-input">
+
+  <p>
+ 
+    <button onclick="getValue1('.js-one')" class="js-one">1</button>
+    <button onclick="getValue1('.js-two');" class="js-two">2</button>
+    <button onclick="getValue1('.js-three');" class="js-three">3</button>
+    <button onclick="
+    if(!calculation){
+      calculation = 0;
+      papa =0; 
+     getValue1('.plus')}
+     else{
+      hi =`${papa} + ${hi}`;
+     }" class="plus">+</button>
+    <button onclick=" results(); hi = ''; " class="equal">=</button>
+
+  </p>
+  <p>
+    <button onclick="getValue1('.js-four')" class="js-four">4</button>
+    <button onclick="getValue1('.js-five')" class="js-five">5</button>
+    <button onclick="getValue1('.js-six')" class="js-six">6</button>
+    <button onclick=" if(!calculation){
+      calculation = 0;
+      papa = 0; 
+      getValue1('.multi')}
+      
+      else{
+       hi = `${papa}* ${hi}`}" class="multi">*</button>
+    <button onclick=" if(!calculation){
+      calculation=0;
+      papa = 0;
+      //hi = 0;
+      getValue1('.minus')}
+      else{
+       hi =`${papa}-${hi}`;}" class="minus">-</button>
+  </p>
+  <p>
+    <button onclick="getValue1('.js-sev')" class="js-sev">7</button>
+    <button onclick="getValue1('.js-et')" class="js-et">8</button>
+    <button onclick="getValue1('.js-nine')" class="js-nine">9</button>
+    <button onclick="getValue1('.js-zero')" class="js-zero">0</button>
+    <button onclick="
+    if(!calculation){
+      calculation = 0;
+      papa = 0;
+      //hi = 0;
+     getValue1('.js-slash')}
+     else{
+      hi =`${papa} / ${hi}`;
+     }" class="js-slash">/</button></p>
+    <p>
+    <button onclick="getValue1('.js-zero2')" class="js-zero2">00</button>
+    <button onclick="getValue1('.js-dot')" class="js-dot">.</button>
+    <button onclick="
+      hi = 0; papa = 0;
+      document.querySelector('.js-input').value = 0;" class="js-clear">A/C</button>
+     <button onclick="
+     document.querySelector('.js-input').value;
+     " class="delete"> Del</button>
+
+  </p>
+    <script>
+     let hi ='';
+  function getValue1(param){
+     calculation = 0; papa = 0;
+      
+      para = document.querySelector(param).innerHTML;
+     hi += para;
+     document.querySelector('.js-input').value= hi;
+    }
+
+     let calculation = '';
+     function results(){
+     calculation = document.querySelector('.js-input').value;
+      papa = (eval(calculation));
+      console.log(papa);
+      hi = ''; hi;
+      document.querySelector('.js-input').value = papa;
+      document.querySelector('.js-input').value;
+      hi = 0;
+      
+    }
+    
+    </script>
+
+ </body>
+</html>

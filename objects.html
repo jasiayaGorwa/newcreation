@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Objects</title>
+  <style> 
+
+  </style>
+</head>
+ <body>
+  
+  <button class="onebtn" onclick="getValue('.onebtn');"> 1</button>
+  <button class="twobtone" onclick="getValue('.twobtone');">2</button>
+  <button class="threebtone" onclick="getValue('.threebtone')"> 5</button>
+  <button class="fourbtone" onclick="getValue('.fourbtone');"> 7</button>
+  
+  <button class="five" onclick="getValue('.five');">12</button>
+  <button class="six" onclick="getValue('.six')">26</button>
+  <button></button>
+  <button></button>
+  <button></button>
+<script>/*
+const product = {
+  name: 'George',
+  age: 22,
+}
+console.log(product.age)
+
+pop =  JSON.stringify(product);
+console.log(pop);
+
+console.log(JSON.parse(pop));
+
+localStorage.setItem('dodo', pop);
+console.log(localStorage.getItem('dodo'));*/
+
+let product = {
+  name: 'George',
+  age: 35,
+};
+console.log( `Age is: ${product.age}`);
+
+product.dueDate = 'February';
+product.quantity = 15;
+console.log(product)
+
+
+let val= 0;
+let auto = {age:'', class:'' };
+function getValue(param){
+  let ans = document.querySelector(param);
+
+  let val = ans.innerHTML;
+  console.log(val);
+}
+
+function pep()
+{
+  if (val === 2)
+{auto.age = 'child';
+auto.class = 'Primary'};
+if (val === 12 ){
+  auto.age = 'youth';
+  auto.class = 'Secondary'
+};
+if(val===7){
+  auto.age = 'adult';
+  auto.class = 'university'
+}};
+console.log(auto)
+
+
+</script>
+ </body>
+</html>
+
+

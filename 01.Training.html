@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Strings and Arrays</title>
+  <style> 
+.js-delete{
+  border:none;
+  color: red;
+  padding: 8px;
+}
+.js-button{
+  background: black;
+  color: green;
+  padding: 1em;
+  border: none;
+  margin-bottom: 14px;
+}
+  </style>
+</head>
+ <body>
+  <button onclick="" class="js-button"> Click</button>
+  
+  <br>
+  <button onclick="" class="papapa"> Hello</button>
+  <div class="js-div"></div>
+
+    <script>
+    const buttonElem = document.querySelector('.papapa');
+    buttonElem.addEventListener('click', ()=>{
+     document.querySelector('.js-div').innerHTML='<p> Hello World</p> <button class="js-delete" onclick=""> Delete </button> </p>';
+      let divOne = document.querySelector('.js-div');
+    console.log(divOne);
+   let dodo = document.querySelector('.js-delete');
+   dodo.addEventListener('click', ()=>{
+     document.querySelector('.js-div').innerHTML='<p> Hello World</p> <button class="js-delete" onclick=""> Delete </button> </p>';});
+    console.log(dodo);
+    });
+
+
+   
+    
+    /*
+     let listOfNumbers = [2,3,5,7,11];
+     console.log(listOfNumbers[2]);
+     console.log(listOfNumbers.splice(2,2));
+     console.log(listOfNumbers);
+     console.log(listOfNumbers.join("."));
+     listOfNumbers.push(33);
+     console.log(listOfNumbers);
+
+     const primArray = [5, 1, 5, 1,1];
+
+
+     console.log(primArray)
+    const newArr = primArray.filter((value,index)=>{
+      return true;*/
+
+      const buttonElement = document.querySelector('.js-button');
+
+      buttonElement.addEventListener('click',()=>{
+        console.log('Hello World');
+      });
+
+
+
+     //console.log(newArr.map((value,index)=>{ return value * '*'}));
+
+     //console.log(newArr.filter((value,index)=>{
+     // return value >=0;
+    // }))
+    </script>
+
+ </body>
+</html>
+
+

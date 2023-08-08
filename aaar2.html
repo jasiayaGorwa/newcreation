@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Array and loops</title>
+  <style> 
+
+  </style>
+</head>
+ <body>
+  <p> ToDo List Practice 1</p>
+  <input placeholder="Todo Name" class="js-input">
+  <input type="date" class="js-date">
+  <button class="js-add-butt" onclick="addTo();"> Add</button>
+ 
+
+  <div class="js-div"> </div>
+
+
+  <p> ToDo List Practice 2</p>
+  <input placeholder="Todo Name" class="js-input">
+  
+  <button  class="js-add-butt" onclick="addTo();"> Add</button>
+  <div class="js-div"> </div>
+  
+<script>
+
+function rist()
+{let lidt = '';
+  for(let i=0; i<todoList.length; i++){
+
+    const tt=todoList[i];
+    const html = `<p> ${tt} 
+      <button onclick="todoList.splice(${i}, 1); addTo();">Delete</button> <p>`;
+        lidt += html;}
+        console.log(lidt)
+  
+  document.querySelector('.js-div').innerHTML = lidt;}
+  const todoList= [`{${name},${dueDate}}`];
+  function addTo(){
+    const todoElem = document.querySelector('.js-input');
+    const dateElem = document.querySelector('.js-date');
+     const name = todoElem.value;
+     const dueDate = dateElem.value;
+
+    todoList.push({name, dueDate});
+    console.log(todoList)
+    todoElem.value = '';
+    rist();
+  }
+
+  
+</script>
+ </body>
+</html>
+
+

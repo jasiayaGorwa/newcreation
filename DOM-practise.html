@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> Document Object Model</title>
+  <style> 
+
+  </style>
+</head>
+ <body>
+  <p> YouTube subsciribe button</p>
+  <button onclick="tototo();" class="poom"> subscribe</button>
+
+
+  <p> Amazon Shipping Calculator</p>
+  <input  placeholder="Cost of order"  class="miss" type="number">
+  <button onclick="cal();"> calculate</button>
+<script>
+ function tototo(){
+const buttonElem = document.querySelector('.poom');
+  if (buttonElem.innerText === 'subscribe') {
+    buttonElem.innerHTML = 'subscibed';
+  }
+else{
+  buttonElem.innerHTML = 'subscribe';
+}}
+function cal(){
+  const inputElem = document.querySelector('.miss');
+  let cost = Number(inputElem.value);
+
+if (cost < 40){
+  cost = cost + 10;
+}
+console.log(cost);}
+</script>
+ </body>
+</html>
+
+
